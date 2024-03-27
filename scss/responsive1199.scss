@@ -402,4 +402,34 @@
   .developer__text {
     font-size: 15px;
   }
+
+  .service-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .service-item {
+    width: calc(100% / 3);
+    &:nth-child(3n) {
+      border-right: solid 1px $colorYellow;
+    }
+
+    &:nth-last-child(-n + 2) {
+      width: 50%;
+      border-top: solid 1px $colorYellow;
+    }
+  }
+
+  .service-item__name {
+    min-height: 44px;
+  }
+
+  section.about-section__info .about-item__desc {
+    min-height: 135px;
+    margin-top: 40px;
+  }
+
+  .about-section__info .picture {
+    height: 195px;
+  }
 }

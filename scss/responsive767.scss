@@ -481,4 +481,69 @@
   .review-section {
     padding-bottom: 20px;
   }
+
+  .grettings-service {
+    justify-content: flex-end;
+    align-items: flex-end;
+  }
+
+  .grettings-service__caption::before {
+    left: -10px;
+    width: calc(100% + 20px);
+  }
+
+  .grettings-service {
+    height: auto;
+    min-height: initial;
+    padding-top: calc(245 / 320 * 100%);
+  }
+
+  .grettings-service .picture {
+    height: auto;
+    padding-top: calc(245 / 320 * 100%);
+  }
+
+  .grettings-service .picture img {
+  }
+
+  .grettings-service__caption {
+    padding: 16px 0;
+  }
+
+  .service-block .container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .service-list {
+    margin: 0;
+  }
+
+  .service-item {
+    width: 100% !important;
+    border: 0 !important;
+    padding: 24px 16px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 8px 20px;
+
+    & + .service-item {
+      border-top: solid 1px $colorYellow !important;
+    }
+  }
+
+  .service-item__name {
+    min-height: initial;
+    margin: 0;
+    width: calc(100% - 60px);
+  }
+
+  .about-section__info .picture {
+    display: block;
+    position: relative;
+    height: auto;
+    padding-top: calc(100 / 320 * 100%);
+    width: 100%;
+  }
 }

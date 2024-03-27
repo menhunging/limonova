@@ -91,6 +91,14 @@ $(document).ready(function () {
     });
   }
 
+  if ($(".tabs").length > 0) {
+    $(".tabs").tabslet({
+      mouseevent: "click",
+      attribute: "href",
+      animation: true,
+    });
+  }
+
   if ($(".modal").length > 0) {
     MicroModal.init({
       openTrigger: "data-modal",

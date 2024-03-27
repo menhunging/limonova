@@ -82,4 +82,28 @@
   .footer-menu {
     max-width: 600px;
   }
+
+  .main {
+    padding-top: 60px;
+  }
+
+  .grettings-service {
+    height: calc(100vh - 60px);
+    min-height: 600px;
+  }
+
+  .service-item {
+    font-size: 15px;
+    line-height: 18px;
+  }
+
+  .service-item__name {
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  .service-item__icon {
+    width: 40px;
+    height: 40px;
+  }
 }

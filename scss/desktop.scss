@@ -890,3 +890,207 @@ section {
 .contacts-section {
   position: relative;
 }
+
+.grettings-service {
+  width: 100%;
+  height: calc(100vh - 64px);
+  min-height: 1080px;
+  position: relative;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  &__caption {
+    padding: 35px 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    z-index: 3;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 32px;
+
+    @include before {
+      left: -50%;
+      top: 0;
+      width: 70%;
+      height: 100%;
+      background-color: $colorYellow;
+      z-index: -1;
+    }
+  }
+
+  .picture {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+
+    img {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}
+
+.service-block {
+  padding: 0;
+}
+
+.service-list {
+  background-color: $colorWhite;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  margin-top: -120px;
+}
+
+.service-item {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+  padding: 40px 24px;
+  border-left: solid 1px $colorYellow;
+
+  &:last-child {
+    border-right: solid 1px $colorYellow;
+  }
+
+  &__icon {
+    width: 47px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__name {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 29px;
+    display: block;
+    margin-top: 24px;
+    text-transform: uppercase;
+  }
+
+  p {
+    margin-top: 8px;
+  }
+}
+
+section.about-section__info {
+  .about-item__desc {
+    border-left: solid 1px $colorYellow;
+    border-right: solid 1px $colorYellow;
+    min-height: 305px;
+    margin-top: 40px;
+  }
+}
+
+.about-section__info {
+  position: relative;
+
+  .picture {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 60%;
+    height: 366px;
+    z-index: -1;
+
+    img {
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}
+
+.offers-section {
+  position: relative;
+
+  &__head {
+  }
+
+  &__body {
+    position: relative;
+    padding-top: 50px;
+    margin-top: 32px;
+    z-index: 3;
+
+    @include before {
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 145px;
+      background-color: $colorBlue;
+      z-index: -1;
+    }
+  }
+}
+
+.offers-tabs {
+  .list-links {
+    display: flex;
+  }
+
+  li {
+    width: 25%;
+    border-left: solid 1px $colorYellow;
+
+    &.active {
+      .tabs-tab {
+        background-color: $colorYellow;
+        color: $colorBlue;
+
+        &::after {
+          transform: rotate(90deg);
+          background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='32' height='28' viewBox='0 0 32 28' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M1 1.5L13.5 14L1 26.5M18.5 1.5L31 14L18.5 26.5' stroke='%23030E2C' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3e%3c/svg%3e ");
+        }
+      }
+    }
+  }
+}
+
+.tabs-body {
+}
+
+.tabs-tab {
+  cursor: pointer;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 29px;
+  text-align: left;
+  background-color: $colorWhite;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  min-height: 180px;
+  position: relative;
+  transition: all 0.3s;
+
+  @include after {
+    position: relative;
+    pointer-events: none;
+    left: 0;
+    width: 30px;
+    height: 25px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='32' height='28' viewBox='0 0 32 28' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M1 1.5L13.5 14L1 26.5M18.5 1.5L31 14L18.5 26.5' stroke='%23DEBA77' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3e%3c/svg%3e ");
+  }
+}
