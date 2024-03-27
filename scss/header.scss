@@ -1,0 +1,62 @@
+.header {
+  background-color: $colorBlue;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  color: $colorWhite;
+  z-index: 10;
+}
+
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 5px;
+  padding: 12px 0;
+}
+
+.logo {
+}
+
+.menu {
+  margin-left: auto;
+
+  ul {
+    display: flex;
+  }
+
+  li {
+    & + li {
+      border-left: solid 1px $colorWhite;
+    }
+  }
+}
+
+.menu-link {
+  padding: 8px 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s;
+
+  &:hover {
+    background-color: $colorWhite;
+    color: $colorBlack;
+  }
+}
+
+.header-call {
+  position: relative;
+  .btn {
+  }
+}
+
+.btn {
+}
+
+.header-call__phone {
+  display: none;
+  width: 21px;
+  height: 21px;
+}

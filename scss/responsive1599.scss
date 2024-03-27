@@ -1,0 +1,34 @@
+@media (max-width: 1599px) {
+  .grettings {
+    height: 650px;
+  }
+
+  .grettings-text {
+    max-width: 720px;
+  }
+
+  .grettings-text .caption {
+    font-size: 48px;
+    line-height: 57px;
+  }
+
+  .grettings-text {
+    font-size: 22px;
+    line-height: 26px;
+  }
+
+  .about-item__num {
+    font-size: 48px;
+    line-height: 50px;
+  }
+
+  .about-section__body {
+    margin-top: 50px;
+    padding: 60px 0 70px;
+    min-height: 404px;
+  }
+
+  .contacts-section__text {
+    max-width: 610px;
+  }
+}

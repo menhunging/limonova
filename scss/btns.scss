@@ -1,0 +1,53 @@
+.btn {
+  -webkit-appearance: none;
+  border-radius: 0;
+  position: relative;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+  color: $colorBlack;
+  text-align: center;
+  padding: 8px 32px;
+  border: 1px solid transparent;
+  display: inline-block;
+  transition: all 0.3s;
+
+  &--white {
+    text-align: center;
+    border-color: $colorWhite;
+    color: $colorWhite;
+
+    &:hover {
+      color: $colorBlack;
+      background-color: $colorWhite;
+    }
+  }
+
+  &--black {
+    text-align: center;
+    border-color: $colorBlue;
+    color: $colorBlue;
+    border-width: 2px;
+    font-weight: 600;
+
+    &:hover {
+      color: $colorWhite;
+      background-color: $colorBlue;
+    }
+  }
+
+  svg {
+    path {
+      fill: $colorBlack;
+      @include transition(fill 0.3s);
+    }
+  }
+
+  &:hover {
+    svg {
+      path {
+        fill: $colorWhite;
+      }
+    }
+  }
+}
