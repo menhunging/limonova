@@ -99,6 +99,34 @@ $(document).ready(function () {
     });
   }
 
+  if ($(".tab-mobile").length > 0) {
+    if ($(window).width() < 767) {
+      $(".offers-tabs").addClass("init-accardeon");
+    }
+
+    $(".tab-mobile").on("click", function () {
+      $(".tab-mobile").removeClass("opened");
+      $(".offers-list").slideUp();
+      $(this)
+        .addClass("opened")
+        .parents(".tabs-body")
+        .find(".offers-list")
+        .stop()
+        .slideDown();
+    });
+
+    $(window).resize(function () {
+      if ($(window).width() > 767) {
+        if ($(".offers-tabs").hasClass("init-accardeon")) {
+          $(".offers-tabs").removeClass("init-accardeon");
+          $(".offers-list").attr("style", "");
+        }
+      } else {
+        $(".offers-tabs").addClass("init-accardeon");
+      }
+    });
+  }
+
   if ($(".modal").length > 0) {
     MicroModal.init({
       openTrigger: "data-modal",

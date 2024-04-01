@@ -36,6 +36,17 @@
     }
   }
 
+  &--blue {
+    background-color: $colorBlue;
+    color: $colorWhite;
+    border: solid 1px $colorBlue;
+
+    &:hover {
+      background-color: transparent;
+      color: $colorBlue;
+    }
+  }
+
   svg {
     path {
       fill: $colorBlack;

@@ -65,4 +65,16 @@
   .contacts-section__text {
     max-width: calc(50% - 35px);
   }
+
+  .offers-list:not(.offers-list--count-1) {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .offers-list--count-4 .offers-item {
+    padding: 0 20px;
+  }
+
+  .offers-item {
+    padding: 0 20px;
+  }
 }
