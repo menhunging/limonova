@@ -2207,19 +2207,6 @@ section.about-section__info .about-item__desc {
   border: solid 1px rgb(222, 186, 119);
   pointer-events: none;
 }
-.offers-item::after {
-  content: "";
-  position: absolute;
-  -webkit-transition: all 0.3s;
-  -moz-transition: all 0.3s;
-  -o-transition: all 0.3s;
-  transition: all 0.3s;
-  width: 25%;
-  height: 40px;
-  background-color: rgb(255, 255, 255);
-  left: 0;
-  top: 0;
-}
 
 .offers-item__text {
   margin-top: 32px;
@@ -2380,6 +2367,9 @@ section.about-section__info .about-item__desc {
 
 .case-consul .offers-item {
   margin-top: 24px;
+}
+.case-consul .offers-item__head::after {
+  display: none;
 }
 .case-consul .offers-controls {
   flex-direction: column;
