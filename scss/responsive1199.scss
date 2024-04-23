@@ -265,13 +265,13 @@
   }
 
   .other-case__text {
-    font-size: 15px;
-    line-height: 18px;
+    font-size: 14px;
+    line-height: 16px;
     -webkit-line-clamp: 5;
 
     strong {
-      font-size: 18px;
-      line-height: 22px;
+      font-size: 16px;
+      line-height: 20px;
     }
   }
 
@@ -634,5 +634,13 @@
 
   .making-tbody .tr .td:first-child {
     padding: 16px;
+  }
+
+  .grettings-service__caption{
+    max-width: 412px;
+
+    &::before {
+      width: 205%;
+    }
   }
 }

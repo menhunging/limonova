@@ -162,6 +162,49 @@ $(document).ready(function () {
       },
     });
   }
+
+  if ($(".other-case__list").length > 0) {
+    let caseList = $(".other-case__list");
+    let caseItem = $(".other-case__item");
+    let count = caseList.find(".other-case__item").length;
+    let btn = $(".other-case__controls .btn");
+    let height = setHeightdefault();
+    let heightVisible = setHeightVisible();
+
+    if (count <= 8) {
+      btn.parents().addClass("hide");
+      return false;
+    }
+
+    caseList.height(heightVisible);
+
+    btn.on("click", function (event) {
+      event.preventDefault();
+      caseList.height(height);
+      btn.parents().addClass("hide");
+    });
+
+    $(window).on("resize", function () {
+      height = setHeightdefault();
+      heightVisible = setHeightVisible();
+
+      caseList.height(heightVisible);
+      btn.parents().removeClass("hide");
+    });
+
+    function setHeightVisible() {
+      let windowWidth = $(window).width();
+      return windowWidth > 1200 ? 500 : windowWidth < 768 ? 560 : 420;
+    }
+
+    function setHeightdefault() {
+      if ($(window).width() > 768) {
+        return caseItem.outerHeight() * (count / 4);
+      } else {
+        return caseItem.outerHeight() * count;
+      }
+    }
+  }
 });
 
 $(window).on("resize", function () {});

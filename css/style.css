@@ -1572,6 +1572,8 @@ section {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   margin-top: 32px;
+  overflow: hidden;
+  transition: height 0.3s;
 }
 
 .other-case__item {
@@ -1663,6 +1665,9 @@ section {
   justify-content: center;
   text-align: center;
   margin-top: 30px;
+}
+.other-case__controls.hide {
+  display: none;
 }
 .other-case__controls .btn {
   padding-top: 18px;
@@ -2755,11 +2760,12 @@ section.about-section__info .about-item__desc {
     height: 650px;
   }
   .grettings-text {
-    max-width: 720px;
+    max-width: 550px;
+    gap: 15px;
   }
   .grettings-text .caption {
-    font-size: 48px;
-    line-height: 57px;
+    font-size: 38px;
+    line-height: 47px;
   }
   .grettings-text {
     font-size: 22px;
@@ -2784,9 +2790,6 @@ section.about-section__info .about-item__desc {
   }
   .grettings {
     height: 550px;
-  }
-  .grettings-text {
-    max-width: 610px;
   }
   .product-item__link {
     font-size: 20px;
@@ -3095,13 +3098,13 @@ section.about-section__info .about-item__desc {
     margin-bottom: 4px;
   }
   .other-case__text {
-    font-size: 15px;
-    line-height: 18px;
+    font-size: 14px;
+    line-height: 16px;
     -webkit-line-clamp: 5;
   }
   .other-case__text strong {
-    font-size: 18px;
-    line-height: 22px;
+    font-size: 16px;
+    line-height: 20px;
   }
   .other-case__link {
     font-size: 15px;
@@ -3381,6 +3384,12 @@ section.about-section__info .about-item__desc {
   }
   .making-tbody .tr .td:first-child {
     padding: 16px;
+  }
+  .grettings-service__caption {
+    max-width: 412px;
+  }
+  .grettings-service__caption::before {
+    width: 205%;
   }
 }
 @media (max-width: 1023px) {

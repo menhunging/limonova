@@ -542,6 +542,8 @@ section {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   margin-top: 32px;
+  overflow: hidden;
+  transition: height 0.3s;
 }
 
 .other-case__item {
@@ -642,6 +644,10 @@ section {
   justify-content: center;
   text-align: center;
   margin-top: 30px;
+
+  &.hide {
+    display: none;
+  }
 
   .btn {
     padding-top: 18px;
