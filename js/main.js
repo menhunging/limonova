@@ -30,6 +30,12 @@ $(document).ready(function () {
         });
       }
     });
+
+    $(".menu-link").map(function () {
+      if ($(this).parents("li").find(".menu-sub").length > 0) {
+        $(this).addClass("arrow");
+      }
+    });
   }
 
   if ($(".thisYear").length > 0) {
@@ -204,6 +210,33 @@ $(document).ready(function () {
         return caseItem.outerHeight() * count;
       }
     }
+  }
+
+  if ($(".about-section__info").length > 0) {
+    let show = true;
+    let countbox = ".about-section__info";
+
+    $(window).on("scroll load resize", function () {
+      if (!show) return false; // Отменяем показ анимации, если она уже была выполнена
+      let w_top = $(window).scrollTop();
+      let e_top = $(countbox).offset().top;
+      let w_height = $(window).height();
+      let d_height = $(document).height();
+      let e_height = $(countbox).outerHeight(); // Полная высота блока со счетчиками
+      if (
+        w_top + 1000 >= e_top ||
+        w_height + w_top == d_height ||
+        e_height + e_top < w_height
+      ) {
+        $(".about-item__num").css("opacity", "1");
+        $(".about-item__num").spincrement({
+          thousandSeparator: " ",
+          duration: 3000,
+        });
+
+        show = false;
+      }
+    });
   }
 });
 

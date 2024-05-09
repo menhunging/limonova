@@ -327,27 +327,13 @@ input {
 .modal__content {
   padding: 0;
   margin: 0;
-
-  .link {
-    font-size: 14px;
-    line-height: 25px;
-    font-weight: 500;
-    letter-spacing: 0.05em;
-    text-decoration-line: underline;
-    @include transition(all 0.3s);
-    color: #4c535b;
-
-    &:hover {
-      text-decoration-color: transparent;
-    }
-  }
 }
 
 .modal__close {
   @include transition(all 0.3s);
   position: absolute;
-  right: 24px;
-  top: 24px;
+  right: 105px;
+  top: 85px;
   display: flex;
   z-index: 10;
   font-weight: 400;
@@ -387,25 +373,13 @@ input {
 }
 
 .modal__inner {
-  background-color: #fbf9f8;
+  background-color: $colorWhite;
   margin: 0 auto;
   position: relative;
-  background-image: url("../img/logo-big.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
-  border-radius: 32px;
-
-  .caption {
-    font-size: 60px;
-    line-height: 60px;
-    left: -15px;
-    letter-spacing: -0.1em;
-  }
-
-  .caption__desc {
-    margin-top: 20px;
-  }
+  padding: 50px 100px;
 }
 
 .micromodal-slide .modal__container,

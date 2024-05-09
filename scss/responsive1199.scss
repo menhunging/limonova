@@ -636,11 +636,115 @@
     padding: 16px;
   }
 
-  .grettings-service__caption{
+  .grettings-service__caption {
     max-width: 412px;
 
     &::before {
       width: 205%;
     }
+  }
+
+  .modal__inner {
+    padding: 30px 50px;
+  }
+
+  #modal-consul .modal__container {
+    width: 100%;
+    max-width: 800px;
+  }
+
+  .modal-block .input-item input {
+    height: 36px;
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .modal-block .input-item textarea {
+    height: 100px;
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .modal-block .input-list {
+    gap: 16px;
+    margin-top: 32px;
+  }
+
+  .modal__close {
+    right: 55px;
+    top: 50px;
+  }
+
+  .modal-block .btn {
+    font-size: 20px;
+    line-height: 24px;
+    min-width: 200px;
+    height: 50px;
+  }
+
+  .case-all__list {
+    .other-case__front {
+      height: 210px;
+    }
+
+    .other-case__back {
+      padding-left: 6px;
+      padding-right: 6px;
+    }
+
+    .other-case__text {
+      -webkit-line-clamp: 4;
+    }
+  }
+
+  .not-page {
+    font-size: 16px;
+    line-height: 20px;
+    max-width: 377px;
+  }
+
+  .not-page__error {
+    font-size: 97.85px;
+    line-height: 115.17px;
+    width: 309px;
+    height: 309px;
+
+    &::after {
+      width: 75%;
+      height: 75%;
+    }
+
+    &::before {
+      background-size: contain;
+    }
+  }
+
+  .menu-link.arrow {
+    background-color: $colorWhite;
+    color: $colorBlue;
+
+    &::after {
+      background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='14' height='8' viewBox='0 0 14 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M1 1L7 7L13 1' stroke='%23030E2C' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3e%3c/svg%3e ");
+      transform: scale(1, -1);
+    }
+  }
+
+  .menu-sub {
+    display: block !important;
+    position: relative;
+    padding: 0;
+    width: 100%;
+    text-align: center;
+  }
+
+  .menu-sub a {
+    font-size: 14px;
+    line-height: 18px;
+    padding: 10px 10px;
+  }
+
+  .footer-menu {
+    width: 70%;
+    transform: translateX(50px);
   }
 }

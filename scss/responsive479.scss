@@ -1,2 +1,22 @@
 @media (max-width: 479px) {
+  .case-all__list {
+    grid-template-columns: 1fr;
+    border-top: solid 1px $colorYellow;
+    position: relative;
+    left: -10px;
+    width: calc(100% + 20px);
+    margin-top: 24px;
+
+    .other-case__item {
+      width: 100%;
+      border: 0 !important;
+    }
+  }
+
+  .case-all__list .other-case__item + .other-case__item,
+  .case-all__list .other-case__item:last-child,
+  .case-all__list .other-case__item:first-child,
+  .case-all__list .other-case__item:nth-child(2n) {
+    border: 0 !important;
+  }
 }

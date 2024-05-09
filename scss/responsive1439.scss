@@ -77,7 +77,7 @@
   }
 
   .footer-menu {
-    max-width: 600px;
+    width: 50%;
   }
 
   .main {
@@ -123,5 +123,28 @@
   .case-checlist__item {
     font-size: 24px;
     line-height: 30px;
+  }
+
+  .blog-item {
+    gap: 16px;
+    font-size: 15px;
+    line-height: 18px;
+    padding: 16px 0;
+  }
+
+  .blog-item__text {
+    gap: 16px;
+  }
+
+  .blog-list {
+    margin-top: 16px;
+  }
+
+  .blog-page__links {
+    margin-top: 16px;
+  }
+
+  .picture-section .picture {
+    padding-top: calc(300 / 440 * 100%);
   }
 }
